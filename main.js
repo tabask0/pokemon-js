@@ -19,6 +19,7 @@ function getPokemon(){
 }
 
 
+
 function showPokemon(data){
     pokemonContainer.classList.remove("invisible");
     pokemonImg.setAttribute('src',data.sprites.other["official-artwork"].front_default);
