@@ -5,7 +5,11 @@ const input = document.getElementById('input');
 const pokemonImg = document.getElementById('pokemonImg');
 const pokemonContainer = document.getElementById('pokemonContainer');
 
-
+input.addEventListener('keypress', function(e){
+  if(e.key == 'Enter'){
+    getPokemon()
+  }
+})
 
 function getPokemon(){
     let inputValue = input.value;
