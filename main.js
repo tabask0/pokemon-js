@@ -13,7 +13,7 @@ input.addEventListener('keypress', function(e){
 
 function getPokemon(){
     let inputValue = input.value;
-    const req = fetch(`https://pokeapi.co/api/v2/pokemon/${inputValue}`).then(pokemon => pokemon.json()).then(data => inputValue ? showPokemon(data) : null);
+    const req = fetch(`https://pokeapi.co/api/v2/pokemon/${inputValue}`).then(pokemon => pokemon.json()).then(data => inputValue ? showPokemon(data) : pokemonContainer.classList.add("invisible"));
 
         console.log(req);
 }
